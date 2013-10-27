@@ -1,0 +1,9 @@
+---
+title: "Software Metrics"
+resources:
+- http://martinfowler.com/articles/useOfMetrics.html
+- text: "Jeff Atwood: metrics as 'Software Tricorders'"
+  url: http://www.codinghorror.com/blog/2005/09/managed-code-analysis-tools.html
+- text: "Jeff Atwood's 'Metric Maid'"
+  url: http://www.codinghorror.com/blog/2006/09/a-visit-from-the-metrics-maid.html
+---
