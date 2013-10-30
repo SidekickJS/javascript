@@ -1,2 +1,2 @@
-set wildignore=output,tmp,bin
+set wildignore=output,tmp,bin,content/sass/bourbon,content/sass/neat
 

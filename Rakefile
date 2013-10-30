@@ -9,16 +9,17 @@ task :deploy do
   %x(
   set -e
   rm -rf output
+  mv vendor /tmp/sk-deploy-vendor
   git checkout gh-pages
   git reset --hard master
   DOMAIN=sidekicksrc.com BASE_URL='http://sidekicksrc.com' nanoc compile
   ls | grep -v output | grep -v tmp | while read file; do rm -rf $file; done 
   mv output/* .
   rm -rf output
-  echo "sidekicksrc.com" > CNAME
   git add . -A
   git commit -m 'latest'
   git push --force public gh-pages
   git checkout master
+  mv /tmp/sk-deploy-vendor vendor/
   )
 end
