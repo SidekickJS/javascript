@@ -6,12 +6,16 @@ resources:
 
 In SidekickJS, cyclomatic complexity contributes to debt as follows:
 
-<table class=debt>
+<table class="debt">
   <tr>
-    <td>0-6</td><td>0</td>
-    <td>7-8</td><td>5</td>
-    <td>9-12</td><td>20</td>
-    <td>13+</td><td>20 + 3* each additional point</td>
+    <th>Complexity</th>
+    <th>Debt</th>
+  </tr>
+  <tr>
+    <td>10 - 15</td><td>1 debt per unit of complexity</td>
+  </tr>
+  <tr>
+    <td>16+</td><td>1.5 debt per unit of complexity</td>
   </tr>
 </table>
 

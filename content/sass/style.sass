@@ -54,8 +54,6 @@ body
     font-size: 1.5rem
   p,ul,ol,code
     line-height: 1.545em
-  img
-    margin: 2rem 0
   .header
     padding: .25rem 1rem
     @media (max-width: 480px)
@@ -70,6 +68,9 @@ body
     text-align: right
     a[href]
       color: #555
+article
+  img
+    margin: 2rem 0
   p, ul, ol, pre
     +content-width
   .sidebar
@@ -192,6 +193,13 @@ div[data-describe], div[data-it], div[data-before], div[data-before-each], div[a
   border: 1px solid hsl(210, 21%, 94%)
   padding: 1rem
 
+nav
+  position: relative
+  height: 4rem
+  img
+    margin: 0
+  .logo
+    position: absolute
 
 /* front page */
 nav, footer
