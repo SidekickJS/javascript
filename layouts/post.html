@@ -20,7 +20,7 @@
       <% if item[:resources] %>
         <h3>Resources</h3>
         <ul>
-          <% resource_links(item[:resources] || []).each do |link| %>
+          <% resource_links(item[:resources] || [],@item).each do |link| %>
             <li><%= link %></li>
           <% end %>
         </ul>

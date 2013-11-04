@@ -1,5 +1,5 @@
 ---
-title: "Repetition"
+title: "Economy"
 layout: post
 resources:
 - "http://c2.com/cgi/wiki?DontRepeatYourself"
@@ -15,6 +15,8 @@ acronyms:
 - DRY
 - SPOT
 ---
+
+We should aim to solve problems with the least code possible. This means avoiding excessive complication; more obvious and pernicious is repetition. 
 
 We should avoid repetition in our code as it causes two problems:
 

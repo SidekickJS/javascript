@@ -205,10 +205,25 @@ nav
 nav, footer
   +outer-container()
 #front
-  +outer-container()
+  header
+    background: $contrast
+    color: #fff
+    min-height: $vunit
+    line-height: $vunit
+    font-size: 2rem
+    text-align: center
+    margin-bottom: 1em
+    h1
+      margin-top: 0
+  article
+    +outer-container()
   section
     +row()
     h2, div
       +span-columns(6)
+      +media($small)
+        +span-columns(4)
+    h2
+      margin-top: 0
 
 

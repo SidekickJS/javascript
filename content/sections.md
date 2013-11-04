@@ -7,7 +7,4 @@ sections:
   metrics:
     title: 'Metrics: measuring quality'
     body: Metrics give us a numerical measure of how well our code lives up to our design goals.
-  linting:
-    title: "Linting: making Javascript's quirks safe"
-    body: "Javascript can be a surprising language. Linting warns us when our code could do something we'd not want, or expect."
 ---
