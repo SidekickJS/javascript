@@ -1,5 +1,3 @@
-
-
 task :deploy do
   diffs = `git diff --name-status HEAD`
   unless diffs.split("\n").empty?

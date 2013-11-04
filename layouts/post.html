@@ -1,38 +1,42 @@
 <%= render "header" %>
-<body class="blog post">
+<body >
 
   <%= render "header_links" %>
 
-  <h1><span class=content><%= item[:title] %></span></h1>
-  <div class=article>
+  <div class="blog post">
 
-    <div class=content>
-      <section class=quick>
-        <%= item[:quick] %>
-      </section>
-      <section class=body>
-        <%= yield %>
-      </section>
+    <h1><span class=content><%= item[:title] %></span></h1>
+    <div class=article>
+
+      <div class=content>
+        <section class=quick>
+          <%= item[:quick] %>
+        </section>
+        <section class=body>
+          <%= yield %>
+        </section>
+      </div>
+
+      <% if item[:resources] %>
+        <h3>Resources</h3>
+        <ul>
+          <% resource_links(item[:resources] || []).each do |link| %>
+            <li><%= link %></li>
+          <% end %>
+        </ul>
+      <% end %>
+
+      <% if item[:aliases] %>
+        <h3>Also know as</h3>
+        <ul>
+          <% (item[:aliases] || []).each do |a| %>
+            <li><%= a %></li>
+          <% end %>
+        </ul>
+      <% end %>
+
+
     </div>
-
-    <% if item[:resources] %>
-      <h3>Resources</h3>
-      <ul>
-        <% resource_links(item[:resources] || []).each do |link| %>
-          <li><%= link %></li>
-        <% end %>
-      </ul>
-    <% end %>
-
-    <% if item[:aliases] %>
-      <h3>Also know as</h3>
-      <ul>
-        <% (item[:aliases] || []).each do |a| %>
-          <li><%= a %></li>
-        <% end %>
-      </ul>
-    <% end %>
-
-
   </div>
+
 <%= render "footer" %>
